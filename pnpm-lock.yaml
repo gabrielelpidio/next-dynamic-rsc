@@ -9,8 +9,10 @@ specifiers:
   eslint-config-next: 13.3.0
   next: 13.3.0
   postcss: 8.4.21
+  prettier: ^2.8.7
   react: 18.2.0
   react-dom: 18.2.0
+  react-server-dom-webpack: 0.0.0-experimental-41b4714f1-20230328
   tailwindcss: 3.3.1
   typescript: 5.0.4
 
@@ -23,8 +25,10 @@ dependencies:
   eslint-config-next: 13.3.0_voubu7prgxjfsfbgx5d4sqnwiy
   next: 13.3.0_biqbaboplfbrettd7655fr4n2y
   postcss: 8.4.21
+  prettier: 2.8.7
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-server-dom-webpack: 0.0.0-experimental-41b4714f1-20230328_biqbaboplfbrettd7655fr4n2y
   tailwindcss: 3.3.1_postcss@8.4.21
   typescript: 5.0.4
 
@@ -360,6 +364,12 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.8.2
+    dev: false
+
+  /acorn/6.4.2:
+    resolution: {integrity: sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
     dev: false
 
   /acorn/8.8.2:
@@ -1730,6 +1740,10 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
+  /neo-async/2.6.2:
+    resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+    dev: false
+
   /next/13.3.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-OVTw8MpIPa12+DCUkPqRGPS3thlJPcwae2ZL4xti3iBff27goH024xy4q2lhlsdoYiKOi8Kz6uJoLW/GXwgfOA==}
     engines: {node: '>=14.6.0'}
@@ -2034,6 +2048,12 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
+  /prettier/2.8.7:
+    resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
+
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
@@ -2068,6 +2088,21 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-server-dom-webpack/0.0.0-experimental-41b4714f1-20230328_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-ERqlZNZB9VsJICbjiC24Rwb5eBEk2GoMA6G0WdQEN5XPW8kSLvLEnE0CGZdwitC1iTILkdVEMEyYHAFVue05Iw==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      react: 0.0.0-experimental-41b4714f1-20230328
+      react-dom: 0.0.0-experimental-41b4714f1-20230328
+      webpack: ^5.59.0
+    dependencies:
+      acorn: 6.4.2
+      loose-envify: 1.4.0
+      neo-async: 2.6.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react/18.2.0:

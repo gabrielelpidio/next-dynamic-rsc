@@ -2,6 +2,7 @@
   "name": "ssr-test",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,8 +18,10 @@
     "eslint-config-next": "13.3.0",
     "next": "13.3.0",
     "postcss": "8.4.21",
+    "prettier": "^2.8.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-server-dom-webpack": "0.0.0-experimental-41b4714f1-20230328",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
   }
