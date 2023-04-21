@@ -1,5 +1,8 @@
 const RegisteredComponents = new Map<string, any>();
 
-RegisteredComponents.set("@/components/serverCounter", () => import('@/components/serverCounter'))
+RegisteredComponents.set(
+  "@/components/ServerCounter",
+  () => import("@/components/ServerCounter")
+);
 
-export default RegisteredComponents
+export default RegisteredComponents;
